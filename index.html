@@ -19,20 +19,24 @@
   text-align: center;
 }
 
-/* Default styles for desktop */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Adjust font size for medium screens */
+@media (max-width: 768px) {
+  #countdown {
+    font-size: 2em;
+  }
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 100%; /* adjust to 100% for mobile */
-    margin: 0 auto;
-    padding: 20px; /* add some padding for mobile */
+/* Adjust font size for small screens */
+@media (max-width: 480px) {
+  #countdown {
+    font-size: 1.5em;
+  }
+}
+
+/* Adjust font size for extra small screens */
+@media (max-width: 320px) {
+  #countdown {
+    font-size: 1em;
   }
 }
         #countdown {
